@@ -4,7 +4,8 @@ document.getElementById('excelButton').addEventListener('click', downloadExcel);
 let data = [];
 
 // Carga de datos desde el archivo JSON
-fetch('/DATA/registro_publicaciones_full.json')
+// fetch('./DATA/registro_publicaciones_full.json')
+fetch('https://github.com/Laytus/filtro-boletin-concursal/releases/download/v1.0.0/registro_publicaciones_full.json')
     .then(response => response.json())
     .then(jsonData => {
         data = jsonData;
