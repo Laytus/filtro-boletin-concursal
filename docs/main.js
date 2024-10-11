@@ -4,7 +4,7 @@ document.getElementById('excelButton').addEventListener('click', downloadExcel);
 let data = [];
 
 // Carga de datos desde el archivo JSON
-fetch('/DATA/registro_publicaciones_full.json')
+fetch('./DATA/registro_publicaciones_full.json')
     .then(response => response.json())
     .then(jsonData => {
         data = jsonData;
